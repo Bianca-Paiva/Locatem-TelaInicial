@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en"> <!-- Idioma da página (considere trocar para pt-BR) -->
+
+<head>
+    <meta charset="UTF-8"> <!-- Suporte a acentuação -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsividade -->
+    <title>LOCATEM</title> <!-- Título da aba -->
+
+    <!-- CSS base para “zerar” estilos padrão dos navegadores -->
+    <link rel="stylesheet" href="./src/css/reset.css" />
+    <!-- CSS principal do site -->
+    <link rel="stylesheet" href="./src/css/estilos.css" />
+    <!-- CSS com ajustes para telas menores -->
+    <link rel="stylesheet" href="./src/css/responsivo.css" />
+</head>
+
+<body>
+    <!-- Cabeçalho do site -->
+    <header class="header">
+
+        <!-- Parte superior do cabeçalho: logo, busca e chat -->
+        <div class="header-top">
+            <!-- Logo da marca -->
+            <img src="./src/images/Logo com nome.png" alt="Logo LOCATEM" class="logo">
+
+            <!-- Barra de pesquisa -->
+            <form class="search-bar" action="#" method="get">
+                <input type="text" placeholder="Pesquisar..." aria-label="Pesquisar"> <!-- Campo de busca -->
+                <button type="submit" class="lupa-btn">
+                    <img src="./src/images/lupa.png" alt="Buscar"> <!-- Ícone de lupa -->
+                </button>
+            </form>
+
+            <!-- Ícone de chat -->
+            <img src="./src/images/chat.png" alt="Abrir chat" class="chat">
+        </div>
+
+        <!-- Menu de navegação principal -->
+        <nav class="menu" aria-label="Menu principal">
+            <a href="#">
+                <img src="./src/images/home (1).png" alt="" aria-hidden="true"> Início
+            </a>
+            <a href="#">
+                <img src="./src/images/carrinho.png" alt="" aria-hidden="true"> Carrinho
+            </a>
+            <a href="#">
+                <img src="./src/images/relogio.png" alt="" aria-hidden="true"> Histórico
+            </a>
+            <a href="#">
+                <img src="./src/images/calendario.png" alt="" aria-hidden="true"> Agendamento
+            </a>
+            <a href="#">
+                <img src="./src/images/notificacoes.png" alt="" aria-hidden="true"> Notificações
+            </a>
+            <a href="#">
+                <img src="./src/images/star.png" alt="" aria-hidden="true"> Avaliações
+            </a>
+            <a href="#">
+                <img src="./src/images/suporte.png" alt="" aria-hidden="true"> Suporte
+            </a>
+            <a href="#">
+                <img src="./src/images/usuario.png" alt="" aria-hidden="true"> Entrar
+            </a>
+        </nav>
+    </header>
+</body>
+</html>

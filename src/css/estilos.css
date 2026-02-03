@@ -1,0 +1,97 @@
+.header {
+  background: linear-gradient(to bottom, #FFCA00 0%, #FFE580 80%, #FFFFFF 100%);
+  padding: 20px 40px 40px;
+}
+
+.header-top {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.header-top .logo {
+    height: 40px;
+}
+
+.header-top .chat{
+    width: 24px;
+    height: 24px;
+    cursor: pointer;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+.search-bar {
+    flex: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    background: #fff;
+    border-radius: 999px;
+    padding: 6px 12px;
+}
+
+.search-bar input {
+    flex: 1;
+    border: none;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-bar button {
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.search-bar img {
+    width: 16px;
+    height: 16px;
+}
+
+.menu {
+    margin-top: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu a {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    font-size: 14px;
+    color: #000;
+    text-decoration: none;
+}
+
+.menu img {
+    width: 16px;
+    height: 16px;
+}
