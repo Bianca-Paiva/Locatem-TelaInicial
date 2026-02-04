@@ -9,4 +9,8 @@
     /* Faz largura e altura incluírem padding e borda */
     /* Evita cálculos malucos e quebra de layout */
     box-sizing: border-box;
+
+    list-style: none;
+
+    font-family: "Montserrat", sans-serif;
 }
