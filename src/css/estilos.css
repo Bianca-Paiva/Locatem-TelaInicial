@@ -1,18 +1,26 @@
+.faixa-topo {
+    background: linear-gradient(
+        to bottom,
+        #FFCA00 0%,
+        #FFE580 35%,
+        #FFFFFF 50%
+    );
+
+    /* controla até onde o gradiente vai */
+    padding-bottom: 30px;
+}
+
 /* ===== CABEÇALHO ===== */
 .header {
-    /* Gradiente do amarelo para branco */
-    background: linear-gradient(to bottom, #FFCA00 0%, #FFE580 80%, #FFFFFF 100%);
-
     height: 172px;
 
-    /* Espaçamento interno do header */
-    padding-top: 33px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-top: 33px; 
+    padding-left: 30px; 
+    padding-right: 30px; 
     padding-bottom: 39px;
 
-    /* Fonte Montserrat */
     font-family: 'Montserrat', sans-serif;
+
 }
 
 /* Área superior do header */
@@ -111,3 +119,105 @@
     /* Espaçamento grande para acomodar o carrossel */
     padding: 211px 51px 370px;
 }
+
+/* ===== CARROSSEL ===== */
+.carrossel {
+    position: relative;
+
+    max-width: 1320px;
+    height: 340px;
+
+    margin: 32px auto 0;
+
+    border-radius: 16px;
+    overflow: hidden;
+}
+
+/* Cada slide */
+.carrossel_item {
+    position: absolute;
+    inset: 0;
+
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+
+.carrossel_item.ativo {
+    opacity: 1;
+    z-index: 1;
+}
+
+/* Imagem do anúncio */
+.anuncio-img {
+    width: 100%;
+    height: 100%;
+}
+
+.anuncio-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* ===== SETAS ===== */
+.setas {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+
+    display: flex;
+    justify-content: space-between;
+
+    padding: 0 20px;
+    transform: translateY(-50%);
+    z-index: 2;
+}
+
+.seta-btn {
+    width: 40px;
+    height: 40px;
+
+    border-radius: 50%;
+    border: none;
+
+    background: rgba(0, 0, 0, 0);
+    color: #fff;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    cursor: pointer;
+}
+
+.seta-btn:hover {
+    background: rgba(0, 0, 0, 0);
+}
+
+/* ===== INDICADORES ===== */
+.carrossel-indicadores {
+    position: absolute;
+    bottom: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.indicadores {
+    display: flex;
+    gap: 8px;
+}
+
+.carrossel-indicador {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+
+    background: rgba(255, 255, 255, 0.6);
+}
+
+.carrossel-indicador.ativo {
+    background: #fff;
+}
+
